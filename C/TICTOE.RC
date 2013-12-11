@@ -1,0 +1,17 @@
+#include "tictoe.rh"
+
+MENU_1 MENU
+   {
+   POPUP "&File"
+      {
+      MENUITEM "&New",     CM_NEWGAME
+      MENUITEM "&Exit",    CM_EXITGAME
+      }
+   POPUP "&Help"
+      {
+      MENUITEM "&Help",    CM_HELP
+      MENUITEM "&About",   CM_ABOUT
+      }
+   }
+
+

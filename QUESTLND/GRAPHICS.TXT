@@ -1,0 +1,76 @@
+                              Graphics.Txt
+                 For Graphics library by 1998 VirtuaSoft
+
+          (All these except colorpalette only work in screen 13H)
+
+Command line:
+        QB /L GRAPHICS
+
+Texture Mapping:
+                This is a texture mapping routine, fully written in QB45,
+        that textures quadrilaterals, not two triangles like pros do it, so
+        I'm actually skipping a step.  This texturing routine is not fully
+        operational, yet, so it has some restrictions in its uses:  A
+        picture with the suffix .TXR is the default; and the picture must be
+        a 40*40 BSAVEd image.
+                (Note: The coordinates go clockwise from the top-left -
+        assuming the picture is upright.)
+
+        Syntax:
+                TextureMap x1%, y1%, x2%, y2%, x3%, y3%, x4%, y4%, file$
+
+Palette:
+                This loads a color palette that was BSAVEd as a file with
+        256 colors defined each as 8-bits red, 8-bits green, 8-bits blue,
+        and 8-bits null.  The default file suffix is .PAL
+
+        Syntax:
+                ColorPalette file$
+
+Negative:
+                This negatives a section of the screen defined if the loaded
+        palette is RPG.PAL.
+
+        Syntax:
+                Negative x1%, y1%, x2%, y2%
+
+Font:
+                This displays text on the screen without erasing the graphics
+        beneath the text!  The text can also be in 8 different colors, and it
+        can be placed at any screen coordinates!
+
+        Syntax:
+                Font x%, y%, text$, startcolor%, endcolor%
+
+Antialias:
+                This smooths the image on the screen with RPG.PAL.
+
+        Syntax:
+                Antialias x1%, y1%, x2%, y2%
+
+Flip Horizontally:
+                It flips a section of the screen horizontally.
+
+        Syntax:
+                Fliphoriz x1%, y1%, x2%, y2%
+
+Flip Vertically:
+                It flips a section of the screen vertically.
+
+        Syntax:
+                Flipvert x1%, y1%, x2%, y2%
+
+Fade:
+                It either darkens or brightens a section of the screen -
+        a + value brightens; a - value darkens.
+
+Grayscale:
+                It removes the color from a section of the screen.
+
+        Syntax:
+                grayscale x1%, y1%, x2%, y2%
+
+
+I hope you have enjoy this utility!
+
+E-mail: gump@gnt.net (address to Danny or VirtuaSoft)

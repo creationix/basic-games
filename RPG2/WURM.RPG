@@ -1,0 +1,35 @@
+% start
+map 14 7  wurm.map
+COLOR 3
+say You enter the DeamonWurm's cave
+event 15 7  leave
+event 3  13 wurm
+wait
+% leave
+map 8  60 main.map
+rpg init main.rpg
+% wurm
+ifitem scales
+wait
+COLOR 3
+say You suddenly turn the corner and
+say run face to face with the DeamonWurm
+pause
+COLOR 1
+charpic wurm.chr
+say You will die silly peasant.
+monster wurm.chr
+fight
+COLOR 3
+ifitem Amulet of Patriarch
+GOTO getscale
+wait
+% getscale
+say After you kill the DeamonWurm, Grandpa
+say tells you how valuable the scales are.
+pause
+say Also, if you don't take the scales the
+say wurm will revive.
+additem scales
+wait
+

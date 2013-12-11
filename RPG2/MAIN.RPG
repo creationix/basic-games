@@ -1,0 +1,141 @@
+DECLARE SUB fight ()
+% start
+map 18 76 main.map
+character solith.chr
+say Welcome to Shadow Falls
+say Go to Riverdon to get Grandpa
+GOTO init
+% init
+midi sicily.mid
+event 28 64 ffury
+event 32 64 ffury
+event 15 25 armory
+event 07 60 wurm
+event 18 75 riverdon
+event 60 93 thief
+event 105100ambush
+event 12585 fbridget
+event 12575 bbridget
+event 12565 fdbridge
+event 13055 bdbridge
+event 80 57 shrine
+event 12045 ftplain
+event 16535 eyre
+event 11525 fdeath
+event 11020 bdeath
+event 10015 castle
+event 60 16 hermit
+event 43 39 mountains
+event 40 61 wateredge
+ifitem orb
+event 69 8  orbl
+ifitem orb
+event 71 8  orbr
+wait
+% orbl
+COLOR 3
+say you use put the orb in the wall
+say and you went through it!
+map 72 8  main.map
+wait
+% orbr
+COLOR 3
+say you use put the orb in the wall
+say and you went through it!
+map 68 8  main.map
+wait
+
+% wateredge
+ifitem shell
+wait
+COLOR 3
+say you stand and look here for a while nice river
+say it almost makes you forget your revenge...
+pause
+charpic goon.chr
+say suddenly a goon jumps out from behind a rock
+say and attacks you!
+pause
+monster goon.chr
+fight
+COLOR 3
+say after the fight you fin a shell on the beach
+pause
+ADDITEM shell
+say it looks like you might need it later...
+wait
+% mountains
+COLOR 3
+say there are strange carvings on the rocks here.
+say It looks like there used to wilders here.
+ifitem arrowhead
+wait
+say You find an arrowhead stuck in the wall
+additem arrowhead
+wait
+% armory
+rpg start armory.rpg
+% wurm
+rpg start wurm.rpg
+% riverdon
+rpg start riverdon.rpg
+% thief
+ifitem broken dagger
+wait
+say A Thief is waiting at thee bridge
+say he ask for all your money!
+ask Do you give if to him
+say You don't have any!
+monster thief.chr
+fight
+additem broken dagger
+wait
+% ambush
+say You are ambushed by Thanos
+say and his goons
+monster thanos1.chr
+monster goon.chr
+monster goon.chr
+fight
+ifitem grandpa's cane
+wait
+say As you think the fight is over, a
+say shadow jumps out of the trees and stabs
+say grandpa...
+pause
+die grand.chr
+charpic grand.chr
+COLOR 1
+say Revenge my death Solith...
+pause
+additem grandpa's cane
+wait
+% fbridget
+rpg front bridget.rpg
+% bbridget
+rpg back bridget.rpg
+% fdbridge
+rpg front dbridge.rpg
+% bdbridge
+rpg back dbridge.rpg
+% shrine
+rpg start shrine.rpg
+% ftplain
+rpg start ftplain.rpg
+% eyre
+rpg start eyre.rpg
+% fdeath
+rpg front death.rpg
+% bdeath
+rpg back death.rpg
+% castle
+rpg start castle.rpg
+% hermit
+rpg start hermit.rpg
+% ffury
+COLOR 1
+say Do you use the rocks
+ask to cross the river
+map 32 74 main.map
+wait
+

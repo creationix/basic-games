@@ -1,0 +1,114 @@
+Plains
+LAND,""
+@: Add ษ to your mana pool.
+  
+  
+  
+Forest
+LAND,""
+@: Add ส to your mana pool.
+  
+  
+  
+Mountain
+LAND,""
+@: Add ห to your mana pool.
+     
+      
+     
+Swamp
+LAND,""
+@: Add ฬ to your mana pool.
+
+
+
+Island
+LAND,""
+@: Add อ to your mana pool.
+
+
+
+Natures Kiss
+ENCHANT,"1ส"
+(1), Remove the top card in
+your graveyard from the game: 
+Enchanted creature gets +1/+1
+until end of turn.
+Elvish Fury
+INSTANT,"ส"
+Buyback (4)
+target creature gets +2/+2 
+until end of turn.
+  
+Regeneration
+ENCHANT,"1ส"
+ส: Regenerate enchanted 
+creature.
+
+
+Hurkyl's Recall
+INSTANT,"1อ"
+Return to target player's
+hand all artifacts in play
+he or she owns.
+     
+Carnophage
+Summon Zombie,"ฬ"
+During your upkeep, pay 1 
+life or tap Carnophage
+
+                          2/2
+Dream Prowler
+Summon Illusion,"2ออ"
+Dream Prowler is unblockable
+as long as no other creatures
+are attacking.
+                          1/5
+Counterspell
+interrupt,"ออ"
+Counter target spell.
+
+
+
+Screeching harpy
+Summon Beast,"2ฬฬ"
+Flying
+1ฬ: Regenerate Screeching
+Harpy.
+                          2/2
+Plaguebearer
+Summon Zombie,"1ฬ"
+XXฬ: Destroy target nonblack
+creature with total casting
+eaquel to X.
+                          1/1
+Prodigal Sorcerer
+Summon Wizard,"2อ"
+@: Prodigal Sorcerer deals 1
+damage to target creature or 
+player.
+                          1/1
+Theft of Dreams
+Sorcery,"2อ"
+For each tapped creature 
+target oppoonent controls,
+draw a card.
+
+Cunning
+Enchant,"1อ"
+Enchanted creature gets +3/+3
+If enchanted creature attacks
+or blocks sacrifice Cunning 
+at end of turn.
+Wayward Soul
+Summon Spirit,"2ออ"
+Flying
+อ: Put Wayward Soul on top 
+of owner's library.
+                          3/2
+Zephyr Falcon
+Summon Falcon,"1อ"
+Flying
+Attacking does not cause 
+Zephyr Falcon to tap.
+                          1/1

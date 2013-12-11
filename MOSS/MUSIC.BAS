@@ -1,0 +1,11 @@
+'Fights                       :PLAY "o3<t255l4dp8l8ap4l2>d<l8ab->c<b-agab-gap8al4fl2d.p4l8defep4efgab-ap8gab-a>c<b-ap8>cl4fdl2c<l4b-l4dp8l8ap4l2>d<l8ab->c<b-agab-gap8al4fl2d.p4l8defep4efgab-ap8gab-a>c<b-ap8>cl4fdl2c<l4b-"
+'Bottom floor                 :PLAY "o2<t190l8cca-gl4a-ga-l2fp8l8fefga-b-a-ga-l1fl8eeefl4gl8eel4fl8fgl4a-l8ffl8eeefggeefffga-a-ffefga-b-a-ga-l1f"
+'fountain coins3              :PLAY "o2t200l4agl8fel4gl2dl4ffl8edcdl1e l4cccl8del4dl2a.l4ddl8c<bab>l1cp4l4agl8fel4gl2d.l4ffl8edcd l1e l4cccl8del4dl2<a.>l4ddl8c<bab>l1cl4ccl8bagal1gl4ccl8dc<bal1gp4l4agl8fel4gl2d.l4ffl8edcd l1e l4cccl8de>l2c.<l8fa>l2c.<l8fa>l1c"
+'Top floor and kings chamber  :PLAY "o1t80l4<d>dd.l8el4d<bbl2el8g>c<l4badeg.l8el4f#.l8>cl4el2d.p4p4l8<b>cl4dd.l8edcl4<b.l8bl2el8g>cl4<bl2al4ef#gl2bl8agl2g.p4p4l4ggf#al2gl8ef#l4geel2el4df#f#.l8fl4gl2f#l4ef#gl2a.l4bb.l8b>l4c<bbagbagabl8agl4gl2dl8abl4cbl8agl2g.p4p4l4d"
+'Forest                       :PLAY "<t90l8gaagl2ap8l8gabl4agl8f#ggf#l2gp8l8f#gal4gf#l8ef#f#el2f#p8l8ef#gl4f#el1>cl2c.<p4l8abbal2bp8l8ab>c<l4bal8gaagl2ap8l8gabl4agl8f#ggf#l2gp8l8fgamll4gf#l1>ddmnl8dcc<bl2bp8>l8ccddcc<b>dcc<bl2b>p8l8ccddcc<bl8>c<bbal2al8>c<bbal2al8>c<bbaagf#gbaaggf#ef#gaagl2ap8l8gabl4agl8f#ggf#l2gp8l8f#gal4gf#l8ef#f#el2f#p8l8f#gal4gf#l2mll1gl2g.p4"
+'Winning the game             :PLAY "o2t245l4ggggaal8gel4ccl8ccdcl4dl1el4ggggaal8gel4cccl8eeedl1cl8aal2al4aggl2gl4bbb.l8gl1al2aal8gel4c.l8cclBcddl1 e l8ccl4cddl1c"
+'Guest Room                   :PLAY "o1t180mn>l4d<mll8gab>cl4d<mngmlg>mnemll8cdef#l4g<mngmlg>mncmll8dc<bamnl4bml>l8c<bagmnl4amll8bagf#l2g.<mn>l4d<mll8gab>cl4d<mngmlg>mnemll8cdef#l4g<mngmlg>mncmll8dc<bamnl4bml>l8c<bagmnl4amll8bagf#l2g.mn<mn>l4d<mll8gab>cl4d<mngmlg>mnemll8cdef#l4g<mngmlg>mncmll8dc<bamnl4bml>l8c<bagmnl4amll8bagf#l2g.mn"
+'Magic room                   :PLAY "t240l4ed#l8dd#dc#l4c<bb-b>c<bl8b-bb-al4g#gf#gb-l8ffl4efb-l8ffl4efl8b-ab-b>l4cc#dd#t240l4ed#l8dd#dc#l4c<bb-b>c<bl8b-bb-al4g#gf#gb-l8ffl4efb-l8ffl4efl8b-ab-b>l4cc#dd#"
+'Fights                       :PLAY "o2t255 l8aaba>c<a>d<al4<aaaa>l8aaba>c<a>d<al4<aaaa>l8aaba>c<a>d<a>e<a>f<a>g<a>a<a>g<a>f<a>e<a>d<a>c<abaap8l8aaba>c<a>d<al4<aaaa>l8aaba>c<a>d<al4<aaaa>l8aaba>c<a>d<a>e<a>f<a>g<a>a<a>g<a>f<a>e<a>d<a>c<abaap8"
+
+

@@ -1,0 +1,756 @@
+		  ллллллллл  ллл   ллл  лллл  лллллл    лллл
+                  лл     лл  лл л л лл   лл   лл   лл    лл
+                  лл     лл  лл  л  лл   лл   лл    лл   лл 
+                  лл  л  лл  лл     лл   лл   лл   лл    лл
+		  ллллллллл  лл     лл  лллл  лллллл    лллл
+		      л 
+				 
+                  VERSION 3.0                  DOCUMENTATION
+
+
+===================
+ TABLE OF CONTENTS
+===================
+
+SECTION 1 - About QMIDI
+SECTION 2 - Version History
+SECTION 3 - Files Included with QMIDI
+SECTION 4 - The SBMIDI and SBSIM Sound Drivers
+SECTION 5 - Using QMIDI
+SECTION 6 - Contacting the Author
+SECTION 7 - Troubleshooting
+
+
+=============
+ ABOUT QMIDI
+=============   
+
+   QMIDI is a utility for BASIC programmers that allows easy
+implemetation of background MIDI file playing in the background.  QMIDI
+will work with the following environments:
+
+		QBasic v1.x (YES! It works with QBasic!)
+		QuickBASIC v4.x
+		Visual BASIC for DOS v1.0
+		MS Professional Development System (PDS)
+
+   To my knowledge, QMIDI is the first and only MIDI player of any kind that
+works with QBasic.
+
+   The following are people who have contributed to QMIDI in one way or
+another.  It seems only fair to give them proper credit:
+
+        Mike Huff      - He wrote some simple MIDI code for QuickBASIC, which
+                         QMIDI evolved from.
+        Rick Elbers    - He wrote the Interrupt routine used in QMIDI 1.0.
+                         It was replaced with assembly language in version
+                         1.1, and hasn't been used since, but it let me
+                         release QMIDI a lot sooner than I would've been
+                         able to otherwise.
+        Angelo Mottola - Angelo contributed pause/resume code.
+
+   The QMIDI source code has been released into the Public Domain, so you
+may use it freely.
+   
+   By the way, I'm looking for the following information for future versions
+of QMIDI:
+	o How to calculate how long a MIDI file runs (in seconds).  My
+	  knowledge of the MIDI file format isn't that great, so I haven't
+	  figured this out yet.
+        o How to control volume and other mixer settings.
+	o How to control pitch and tempo.
+
+   If you know anything about these topics, please enlighten me so I can
+incorporate the features into new versions of QMIDI.  Anyone who
+provides info will, of course, receive full credit for their contribution.
+See Section 6 for contact information.
+
+
+=================
+ VERSION HISTORY
+=================
+
+   - New in Version 3.0
+        o MIDI pausing/resuming has been added.  You can now stop MIDI
+          files without having to restart the music altogether.  This feature
+          requires SBSIM.COM to be loaded.
+        o Improved driver detection.  No longer a simple routine that relies
+          on help from MEM.EXE, QMIDI can now check for the presence of
+          SBMIDI and SBSIM with much better accuracy.
+        o All three of the sample MIDI files have been replaced with better
+          sounding tunes.
+   - New in Version 2.1
+	o Large MIDI file playing is back!  Programmers can once again use
+	  MIDI files in their programs that are larger than 64 kilobytes
+	  with the SBSIM driver (not used in v2.0) and 3 new routines
+	  (NOTE: Use of SBSIM.COM in version 2.1 is optional; programs that
+	  don't need MIDI files larger than 64k can take advantage of extra
+	  conventional memory by just using the SBMIDI driver).
+	o A newer version of the SBMIDI.EXE driver is included.  It provides
+	  cleaner-sounding music with fewer glitches than the old version
+	  (NOTE: the original SBMIDI driver is also included for those who
+	  wish to use it, under the file name OLDMIDI.EXE).
+   - New in Version 2.0
+	o At long last, the insane memory requirements for QMIDI have been
+	  reduced!  Instead of two sound drivers, the program only needs
+	  one, and while version 1.x typically used 135k of base memory or
+	  more, v2.0 uses only 12 kilobytes!
+	o You can now control how MIDI files are loaded.  This means that
+	  you can store MIDI files in a BASIC string or any type of
+	  array.  While this does make less memory available to your
+	  programs (since MIDI loading is handled by the program, instead
+	  of the sound driver), you can have multiple files loaded at
+	  once, and the amount of memory used does not have to be a
+	  constant (in previous versions, a specific amount of memory
+	  was allocated, and it could not be changed without unloading
+	  the sound drivers).
+	o A routine has been added to calculate the amount of memory
+	  needed to store a MIDI file.
+	o Until I can devote some more time to refining the assembly
+	  language code in QMIDI, MIDI files are now limited to 64
+	  kilobytes in size.  Larger files will not be loaded.
+	o The 3rd sample MIDI file has been replaced by a better-sounding
+	  piece of music.
+	o The background color in the demonstration program (SAMPLE.BAS)
+	  has been changed.
+   - New in Version 1.1
+	o Much of the source code has been rewritten in assembly, so it
+	  will run several times faster on slow computers.
+	o The size of the code has been reduced by about 30%, leaving more
+	  memory for larger MIDI files.
+	o DriversLoaded routine added - provides rudimentary detection
+	  of sound drivers.
+   - New in Version 1.0
+	o v1.0 is the initial release of QMIDI.
+
+
+===========================
+ FILES INCLUDED WITH QMIDI
+===========================
+
+   The QMIDI30.ZIP file contains the following files:
+
+   QMIDI.BAS            -               The QMIDI source code
+   QMIDI.DOC            -               QMIDI documentation
+   SBMIDI.EXE           -               Creative Labs MIDI driver
+   OLDMIDI.EXE          -               Older verison of the MIDI driver
+   SBSIM.COM            -               Creative Labs Sound Interface
+					driver
+   SBSIM.CFG            -               Configuration file for SBSIM.COM
+   SAMPLE.BAS           -               A sample program that uses QMIDI
+   SAMPLE1.MID          -               A MIDI file to try out with QMIDI
+   SAMPLE2.MID          -               Another MIDI file to try with QMIDI
+   SAMPLE3.MID          -               Yet another MIDI file
+   FILE_ID.DIZ          -               Program description for BBSes
+
+                                                          
+====================================
+ THE SBMIDI AND SBSIM SOUND DRIVERS
+====================================
+
+   The first things you need to acquaint yourself with are the sound drivers
+included with QMIDI - SBMIDI.EXE and SBSIM.COM.  They are TSR (Terminate and 
+Stay Resident) applications that remain in memory while QMIDI is in use, and
+can be unloaded afterward.
+   SBMIDI.EXE must be loaded before you play ANY MIDI files.  SBSIM.COM is
+required for certain features to be available:
+
+        o Support for files larger than 64 kilobytes
+        o The Pause/Resume functions
+        o Loading files without using arrays
+
+   SBMIDI should always be loaded before SBSIM.  When unloading, remove
+SBSIM first, then SBMIDI.
+
+   To load a driver, type its name at the DOS prompt, like so:
+
+   SBMIDI.EXE <Enter>
+   SBSIM.COM <Enter>            (IF NEEDED)
+   
+!!! IMPORTANT !!! 
+   It is *NOT SAFE* to load the drivers using the BASIC "SHELL" command.
+They will not be loaded properly.  In order for the drivers to function 
+properly, they must be loaded from the command line or from a batch file
+outside of the BASIC environment.
+   
+   When you load SBMIDI.EXE, some information will appear on the screen.
+Normally, it will report that it has installed itself at Interrupt 80H.
+QMIDI assumes that this is the case.
+   If it loads at a different interrupt, don't fret.  Simply execute the
+following statement before using any other QMIDI routines, and QMIDI should
+adjust itself accordingly:
+
+        DriversLoaded SBMIDI.INTERRUPT, SBSIM.INTERRUPT
+
+   Likewise, QMIDI assumes that SBSIM.COM will be loaded at a specific
+Interrupt - 81H.  If it isn't, the above statement should cause QMIDI
+to locate SBSIM.COM as well as SBMIDI.
+   Refer to Section 5 for more information on the DriversLoaded routine.
+   
+   The SBMIDI driver will occupy approximately 12 kilobytes of conventional 
+memory, and the SBSIM driver will use 205k in its default configuration.
+   For this reason, it is recommended that you not use SBSIM unless it is
+necessary.  And if you're using SBSIM to enable music pausing, but don't need
+to play files larger than 64k, you should edit the SBSIM.CFG file.  Locate
+the [Midi] section and change the "BufferSize=" value to 0; this will
+minimize memory usage.
+
+   When you are done using QMIDI, you will want to unload the driver(s)
+to free up conventional memory for other programs.  To do this, use the /U
+switch:
+
+		SBSIM /U        <Enter>         (IF LOADED)
+		SBMIDI /U       <Enter>
+
+   If all has gone well up to now, you're ready to move on to the next
+section.
+
+
+=============
+ USING QMIDI
+=============
+
+   This section covers using the QMIDI program itself.  I'm assuming that
+you have already loaded the necessary sound driver(s).  If not, refer to
+the previous section.
+   I'm also assuming that you have a basic understanding of your programming
+environment.  If you've printed this manual out, you should have QMIDI.BAS 
+loaded now.  Users of QuickBASIC, PDS, and VB-DOS need to load the default 
+libraries, usually done by specifying the /L switch when they start the IDE.
+
+   To use QMIDI in your own programs, you will need ALL of the code that is
+in QMIDI.BAS.  This includes all code that is not in a subroutine.  The
+easiest way to start making an application that uses QMIDI is to open
+QMIDI.BAS, click File, Save As, and save it to a different file name.  This
+will create a copy of QMIDI.BAS.  Use the new file you created as the basis
+of your program, and everything should work fine.
+
+   Since using versions 2.0-3.0 of QMIDI is a bit more complicated than in
+version 1.x, I will elaborate on some of the aspects of MIDI file playing.
+   Before you can play a MIDI file, you must load it into memory.  Loading a 
+MIDI file that is SMALLER than 64k takes two basic steps:
+
+	1. Set aside an area of memory large enough to hold the file
+	   (this can be a string or any type of array).
+	2. Call the LoadMIDI routine with the name of the MIDI file and
+	   the location of the memory area you've set aside for it.
+	
+   There is a routine supplied with QMIDI that can make calculating how
+much space is required to store a file a lot easier.  It is called
+BytesRequired&; and the usage is this:
+		A& = BytesRequired&(Filename$)
+   Specify the MIDI file you want to load for Filename$.
+
+   Loading a MIDI file that is LARGER than 64 kilobytes is a bit easier:
+
+        1. Make sure that the SBSIM.COM driver is loaded properly.
+	2. Call the LoadLarge routine with the name of the MIDI file.
+   
+   Now to start a quick example.  Assume there is a file called MUSIC.MID in
+the current directory that you want to load and play.  First, we must set
+aside some memory for it, as described above.  For the example, an
+integer array will be used.  Here are the first few lines of code:
+	
+	MemoryNeeded& = BytesRequired&("MUSIC.MID")
+	DIM MIDI%(MemoryNeeded& \ 2)
+
+   You'll notice that the amount of memory returned by BytesRequired&
+was cut in half when dimensioning the array.  This is because an integer
+holds 2 bytes.  So, each element of an integer array can hold two bytes
+of data.
+   The next step is to call the LoadMIDI routine.  Its usage is as follows:
+		LoadMIDI Filename$, MIDISegment%, MIDIOffset%
+   Filename$ is, of course, the name of the MIDI file to be loaded.
+   MIDISegment% and MIDIOffset% may be unfamiliar to you.  These two
+arguments point to the area of memory that we've set aside for the MIDI
+file.
+   In this case, we've set aside the array called MIDI%() to hold
+the file.  To calculate the Segment of this area of memory, the BASIC
+VARSEG function will be used.  We have to provide VARSEG with the name of
+the array, as well as the first element in the array.  In MIDI%(),
+the first element is numbered 0, so the segment the array is in can be
+calculated like this:
+	ArraySegment% = VARSEG(MIDI%(0))
+   
+   The next value to be calculated is the "Offset."  This is where the
+array is stored within the segment.  BASIC also provides a function to
+calculate this value - it is called VARPTR, and it is used the same way
+as VARSEG:
+	ArrayOffset% = VARPTR(MIDI%(0))
+
+!!! IMPORTANT !!!
+   Strings and string arrays are not ideal for storing MIDI files, as it
+eats up precious string space.  However, if you do use them, you cannot
+use the VARPTR function to calculate the offset of the storage area.  You
+must use the SADD function instead.  The syntax is idential to that of
+VARPTR:
+	ArrayOffset% = SADD(StringVar$)
+		-or-
+	ArrayOffset% = SADD(StringArray$(0))
+
+
+   Now that we know how to calculate exactly where the area of memory we've
+set aside is located, we can use the LoadMIDI routine:
+
+	LoadMIDI "MUSIC.MID", VARSEG(MIDI%(0)), VARPTR(MIDI%(0))
+   
+   After this command, the file will be loaded into memory, and it is
+ready to be played.
+   
+   The hard part is over (if you used LoadLarge instead, there wasn't a
+hard part at all).  Now, all we have to do is start the music.  For files
+loaded with LoadMIDI, use PlayMIDI; larger files that were loaded with
+LoadLarge are started with PlayLarge.
+   Here is the PlayMIDI command that fits the above example:
+
+	PlayMIDI VARSEG(MIDI%(0)), VARPTR(MIDI%(0))
+
+   The MIDI file should begin playing after this command is issued.  After
+this, your program can continue as normal, and will not be interrupted by
+the MIDI playing.  When you want to stop the music, use the StopMIDI command:
+
+	StopMIDI
+
+   What follows is a short program that combines all of the information
+you've read so far in this section.  If begins playing a MIDI file, and
+stops when the user presses a key:
+
+	DIM MIDI%(BytesRequired&("MUSIC.MID") \ 2)
+
+	LoadMIDI "MUSIC.MID", VARSEG(MIDI%(0)), VARPTR(MIDI%(0))
+	PlayMIDI VARSEG(MIDI%(0)), VARPTR(MIDI%(0))
+
+	PRINT "Press any key to quit."
+	A$ = INPUT$(1)
+
+	StopMIDI
+	END
+
+   Just for good measure, I'll provide an example program for playing files
+that are larger than 64 kilobytes:
+
+	LoadLarge "BIGMUSIC.MID"
+	PlayLarge
+
+	PRINT "Press any key to quit."
+	A$=INPUT$(1)
+
+	StopMIDI
+	END
+
+   It's simple!  You can also combine loading and playing into one step,
+with the LoadAndPlayMIDI and LoadAndPlayLarge routines.
+
+   In addition to the basic loading and playing routines, QMIDI provides
+a Pause/Resume feature, which allows you to stop playing a file
+at any time, and then start playing again where you left off.
+   This is done with two routines: PauseMIDI and ResumeMIDI.  Using them
+couldn't be simpler; there are no arguments.  As long as SBSIM.COM is loaded,
+they will work with any MIDI file, no matter which set of routines (the
+normal ones, or the ones specifically for large files) you used to load and
+play it.
+   
+   The remainder of this section covers the syntax of each QMIDI routine.
+
+-------------------------------------
+ FUNCTION BytesRequired& (Filename$)
+-------------------------------------
+Calculates the number of bytes required to store a file in memory
+
+SYNTAX:
+	A& = BytesRequired&(Filename$)
+WHERE:
+	BytesRequired& - Returns the number of bytes needed to store
+			 the specified file in memory.
+	Filename$ - The file you want to load into memory.
+NOTES:
+   If the file you will be loading will be placed in an integer array (%),
+   divide the value returned by this routine by 2.
+
+   If the file will be loaded into a long integer (&) or single precision (!) 
+   array, divide by 4.
+
+   If it will be loaded into a double precision (#) array, divide by 8.
+
+   And, if it will be loaded into a string or string array ($), do not modify
+   the value returned.
+EXAMPLES:
+	'Calculates the bytes required to load a MIDI file into a string:
+	BytesReq& = BytesRequired&("MYMIDI.MID")
+	'Calculates the memory required to load a file into an integer array:
+	BytesReq& = BytesRequired&("MIDIFILE.MID") \ 2
+	'Calculates the memory required to load a file into a double
+	'precision array:
+	BytesReq& = BytesRequired&("MIDI.MID") \ 8
+
+-------------------------------------
+ SUB DriversLoaded (SBMIDI%, SBSIM%)
+-------------------------------------
+Attempts to detect whether or not the sound drivers are properly loaded
+
+SYNTAX:
+        DriversLoaded SBMIDI%, SBSIM%
+WHERE:
+        SBMIDI% - A variable that will contain the interrupt that
+                  the SBMIDI driver is loaded at.
+        SBSIM% - A variable that will contain the interrupt that
+                 the SBSIM driver is loaded at.
+NOTES:
+   If SBMIDI% or SBSIM% contain a value of 0, DriversLoaded could not
+   find that particular driver at any of the interrupts it checked.
+
+   In the interest of speed, DriversLoaded only checks 10 interrupts
+   (80h through 89h).  The chance of either driver being loaded outside
+   this range is very slim.
+
+   It's a good idea to run this statement:
+        DriversLoaded SBMIDI.INTERRUPT, SBSIM.INTERRUPT
+   before using any other QMIDI routines.  This will overwrite the default
+   interrupts with the values that are actually being used by the drivers.
+   If you don't do this, and the drivers are not loaded at the default
+   interrupts, you'll experience problems.
+
+   Have your program check the values returned by DriversLoaded.  If one
+   of the values is 0, it means that particular driver may not be properly
+   loaded, and your program should warn the user.
+
+EXAMPLE:
+        'Warns the user if the drivers may not be properly loaded:
+        DriversLoaded SBMIDI.INTERRUPT, SBSIM.INTERRUPT
+        IF SBMIDI.INTERRUPT = 0 OR SBSIM.INTERRUPT = 0 THEN
+                PRINT "Warning!  The drivers required for music may not"
+		PRINT "have been loaded properly!  Are you sure you want"
+		PRINT "to continue? (Y/N)"
+		A$ = UCASE$(INPUT$(1))
+		IF A$ <> "Y" THEN END
+	END IF
+
+----------------------------------
+ SUB LoadAndPlayLarge (Filename$)
+----------------------------------
+Loads a MIDI file into memory and begins playing it (requires SBSIM.COM)
+
+SYNTAX:
+	LoadAndPlayLarge Filename$
+WHERE:
+	Filename$ - The name of a MIDI file.
+NOTES:
+   LoadAndPlayLarge is intended to be used on MIDI files that are larger
+   than 64 kilobytes in size.  Before you can use it, SBSIM.COM must be
+   loaded.  Because SBSIM uses a sizable amount of conventional memory,
+   it is recommended that LoadAndPlayMIDI be used instead on smaller files.
+
+------------------------------------------------------------
+ SUB LoadAndPlayMIDI (Filename$, MIDISegment%, MIDIOffset%)
+------------------------------------------------------------
+Loads a MIDI file into memory and begins playing it
+
+SYNTAX:
+	LoadAndPlayMIDI Filename$, MIDISegment%, MIDIOffset%
+WHERE: 
+	Filename$ - The name of a MIDI file.
+	MIDISegment% - The segment of memory to load the MIDI file
+		       to.
+	MIDIOffset% - The offset within the segment to begin loading
+		      the MIDI file.
+NOTES:
+   LoadAndPlayMIDI is the equivalent of calling the PlayMIDI routine
+   immediately after the LoadMIDI routine.  It loads the specified MIDI file
+   into memory and begins playing it in the background.  If the MIDI file
+   fails to start playing, see the Troubleshooting section.
+EXAMPLES:
+	'Loads a MIDI file into an integer array and plays it:
+	LoadAndPlayMIDI "MYMIDI.MID", VARSEG(IArray%(0)), VARPTR(IArray%(0))
+	'Loads a MIDI file into a string array and plays it:
+	LoadAndPlayMIDI "MIDIFILE.MID", VARSEG(SArray$(0)), SADD(SArray$(0))
+
+---------------------------
+ SUB LoadLarge (Filename$)
+---------------------------
+Loads a MIDI file into memory (requires SBSIM.COM)
+
+SYNTAX:
+	LoadLarge Filename$
+WHERE:
+	Filename$ - The name of a MIDI file.
+NOTES:
+   LoadLarge is intended to be used on MIDI files that are larger than
+   64 kilobytes in size.  Before you can use it, SBSIM.COM must be
+   loaded.  Because SBSIM uses a sizable amount of conventional memory,
+   it is recommended that LoadMIDI be used instead on smaller files.
+   
+-----------------------------------------------------
+ SUB LoadMIDI (Filename$, MIDISegment%, MIDIOffset%)
+-----------------------------------------------------
+Loads a MIDI file into memory
+
+SYNTAX:
+	LoadMIDI Filename$, MIDISegment%, MIDIOffset%
+WHERE:
+	Filename$ - The name of a MIDI file.
+	MIDISegment% - The segment of memory to load the file to.
+	MIDIOffset% - The offset within the segment to being loading the
+		      MIDI file.
+NOTES:
+   LoadMIDI does not play the MIDI file you specify.  It loads it into
+   memory so that it may be played with a call to PlayMIDI.
+EXAMPLES:
+	'Loads a MIDI file into an integer array:
+	LoadMIDI "MYMIDI.MID", VARSEG(IArray%(0)), VARPTR(IArray%(0))
+	'Loads a MIDI file into a string:
+	LoadMIDI "MIDIFILE.MID", VARSEG(Strng$), SADD(Strng$)
+
+------------------------
+ FUNCTION MIDIError$ ()
+------------------------
+Returns any error that occurred while the last QMIDI routine was being run
+
+SYNTAX:
+	A$ = MIDIError$
+WHERE:
+	MIDIError$ - Returns one of the following error messages:
+			"NO ERROR"
+			"FILE CONTAINS NO DATA"
+			"FILE IS TOO LARGE"
+			"NO MIDI FILE PLAYING"
+			"UNKNOWN ERROR"
+NOTES:
+   The MIDI.ERROR shared variable contains any errors that occur in
+   number form.
+
+---------------------
+ VARIABLE MIDI.ERROR
+---------------------
+Holds the error code of the last QMIDI routine executed
+
+SYNTAX:
+	MIDI.ERROR - Holds an error code from a QMIDI routine:
+			0 - No error occurred the last time a routine
+			    was run.
+			1 - The MIDI file you attempted to load contains
+			    no data.
+			2 - The MIDI file you attempted to load is
+			    larger than 64 kilobytes.
+			3 - No MIDI file is currently playing.
+NOTES:
+   MIDI.ERROR only holds an error code for the last QMIDI routine executed.
+   If you use a QMIDI routine, then use another one immediately after, you
+   have no way of checking for errors in the first routine.
+
+   Use the MIDIError function to return a string representation of any
+   errors that have occurred.
+
+------------------
+ SUB PauseMIDI ()
+------------------
+Pauses a MIDI file that is currently playing (requires SBSIM.COM)
+
+SYNTAX:
+        PauseMIDI
+NOTES:
+   Although it requires SBSIM.COM to be loaded, PauseMIDI will work on files
+   that are played using SBMIDI.EXE (i.e., the PlayMIDI statement) as
+   well as those that use the PlayLarge statement.
+
+   The MIDI timer is frozen when PauseMIDI is used.  It starts counting
+   again when ResumeMIDI is executed.
+
+------------------
+ SUB PlayLarge ()
+------------------
+Plays a MIDI file that has been previously loaded with LoadLarge
+
+SYNTAX:
+	PlayLarge
+NOTES:
+   It is safe to run PlayMIDI when no MIDI file has been loaded, although
+   no music will play.
+
+------------------------------------------
+ SUB PlayMIDI (MIDISegment%, MIDIOffset%)
+------------------------------------------
+Plays a MIDI file that has been previously loaded with LoadMIDI
+
+SYNTAX:
+	PlayMIDI MIDISegment%, MIDIOffset%
+WHERE:  
+	MIDISegment% - The segment where the MIDI file was loaded.
+	MIDIOffset% - The offset within the segment that the MIDI file
+		      was loaded to.
+NOTES:
+   It is safe to run PlayMIDI when no MIDI file has been loaded, although
+   no music will play.
+EXAMPLES:
+	'Plays a MIDI file that has been loaded to an integer array:
+	PlayMIDI VARSEG(IArray%(0)), VARPTR(IArray%(0))
+	'Plays a MIDI file that has been loaded to a double precision array:
+	PlayMIDI VARSEG(DArray#(0)), VARPTR(DArray#(0))
+	'Plays a MIDI file that has been loaded to a string array:
+	PlayMIDI VARSEG(SArray$(0)), SADD(SArray$(0))
+
+-------------------
+ SUB ResumeMIDI ()
+-------------------
+Continues playing a MIDI file that has been paused (requires SBSIM.COM)
+
+SYNTAX:
+        ResumeMIDI
+
+---------------------------
+ VARIABLE SBMIDI.INTERRUPT
+---------------------------
+An integer variable containing the interrupt that SBMIDI.EXE is loaded at
+
+SYNTAX:
+        SBMIDI.INTERRUPT can contain a value of 0, or between 80h and 89h.
+        By default, its value is 80h.
+
+NOTES:
+   It's a good idea to run DriversLoaded at the start of your program.
+   The drivers may not always load at their default interrupts, and QMIDI
+   needs to adjust itself accordingly if the driver loads somewhere else.
+   This statement:
+        DriversLoaded SBMIDI.INTERRUPT, SBSIM.INTERRUPT
+   should be in your program before any other QMIDI routines.  It will
+   attempt to locate the SBMIDI and SBSIM drivers, and return the interrupts
+   they are loaded at.
+
+   If DriversLoaded returns a value of 0 for either SBMIDI.INTERRUPT or
+   SBSIM.INTERRUPT (if your program uses SBSIM.COM), the user of your
+   program needs to be warned that the drivers are probably not loaded
+   properly.
+
+--------------------------
+ VARIABLE SBSIM.INTERRUPT
+--------------------------
+An integer variable containing the interrupt that SBSIM.COM is loaded at
+
+SYNTAX:
+        SBSIM.INTERRUPT can contain a value of 0, or between 80h and 89h.
+        By default, its value is 81h.
+
+NOTES:
+   See the notes for SBMIDI.INTERRUPT.
+
+-----------------
+ SUB StopMIDI ()
+-----------------
+Stops a MIDI file that is currently playing
+
+SYNTAX:
+	StopMIDI
+NOTES:
+   It is safe to run StopMIDI when no MIDI file is playing.  If you have
+   not started playing a file, nothing will happen.
+
+-----------------------
+ FUNCTION TimeMIDI! ()
+-----------------------   
+Returns how long the current MIDI file has been playing
+
+SYNTAX:
+	A! = TimeMIDI!
+WHERE:
+	TimeMIDI! - The number of seconds the current MIDI file has been 
+		    playing.
+NOTES:
+   TimeMIDI! returns a 0 if no MIDI file is playing.
+
+   TimeMIDI! returns the same value all the time when a MIDI file is paused.
+   When playing resumes, it will start counting again where it left off.
+EXAMPLE:
+	'Continuously updates the amount of time a file has been playing:
+	LoadAndPlayMIDI "MID.MID", VARSEG(MyArray%(0)), VARPTR(MyArray%(0))
+	DO UNTIL LEN(INKEY$)
+		LOCATE 1,1: PRINT USING "###.##"; TimeMIDI!
+	LOOP
+
+
+=======================
+ CONTACTING THE AUTHOR
+=======================      
+
+   For the sake of brevity, the documentation may not be as thorough
+in places as some would like.
+   If the documentation didn't explain something properly to you, feel free
+to e-mail me and I'll be happy to go into further detail.  My e-mail address
+is
+                        jessedorland@hotmail.com
+   Please refer to the Troubleshooting section before e-mailing me, to see
+if your question can be answered there.
+   I'd also like to hear any comments you have on QMIDI, and suggestions for
+enhancements in future versions.
+
+   The latest version of QMIDI, and related files, can always be found at
+the QMIDI Home Page:
+        http://www.primenet.com/~merlin57/qmidi/
+
+
+=================
+ TROUBLESHOOTING
+=================
+
+   PROBLEM: My computer freezes whenever I use any of the QMIDI routines.
+   CAUSE #1: You have not properly loaded the sound driver(s).
+   CAUSE #2: Your sound card does not have sufficient Sound Blaster
+	     compatibility.
+   CAUSE #3: The MIDI file you are trying to play is too large for the
+	     array or variable you tried to load it into, and has
+	     overlapped into another area of memory.
+   SOLUTION #1: Refer to Section 4 for instructions on loading the 
+		driver(s).
+   SOLUTION #2: Get a sound card with better Sound Blaster emulation
+		(sorry, QMIDI requires an SB-compatible sound board).
+   SOLUTION #3: Use the BytesRequired function to make sure you allocate
+		enough memory for the MIDI file.
+
+
+   PROBLEM: I don't hear any sound when I try to play a MIDI file.
+   CAUSE #1: The MIDI file you are trying to play is corrupt or does not
+	     exist.
+   CAUSE #2: Your sound card does not have sufficient Sound Blaster             
+	     compatibility
+   CAUSE #3: The MIDI file you are trying to play is too large to fit into
+	     the allocated space.
+   SOLUTION #1: Try playing a different MIDI file to see if the one you are
+		using is corrupt.
+   SOLUTION #2: Get a sound card with better Sound Blaster emulation.
+   SOLUTION #3: Use the BytesRequired function to make sure you allocate
+		enough memory to accommodate the MIDI file.
+
+   
+   PROBLEM: The SBMIDI driver does not load properly.
+   CAUSE #1: Your sound card does not have sufficient Sound Blaster
+	     compatibility.
+   CAUSE #2: The driver has already been loaded.
+   SOLUTION #1: Get a sound card with better Sound Blaster emulation.
+   SOLUTION #2: Nothing needs to be done; the driver is already in memory.
+   
+   PROBLEM: The SBSIM driver does not load properly.
+   CAUSE #1: Your sound card does not have sufficient Sound Blaster
+	     compatibility.
+   CAUSE #2: The driver is already loaded.
+   CAUSE #3: SBMIDI.EXE is not loaded.
+   SOLUTION #1: Get a sound card with better Sound Blaster emulation.
+   SOLUTION #2: If the driver is already loaded, there's no problem.
+   SOLUTION #3: Load SBMIDI.EXE prior to loading SBSIM.COM.
+
+   PROBLEM: I run out of string space when using QMIDI.
+   CAUSE #1: One or more MIDI files is using all available string space.
+   CAUSE #2: The STATIC subroutines preserve strings even after the routines
+             are finished executing; they're draining your string space.
+   SOLUTION #1: Use a numeric array (integer, long integer, single- or
+                double-precision) instead.
+   SOLUTION #2: Remove the STATIC definition from the PlayMIDI, PlayLarge,
+                LoadMIDI, LoadLarge, LoadAndPlayMIDI, LoadAndPlayLarge,
+                PauseMIDI and ResumeMIDI routines.
+
+   PROBLEM: I receive 'Out of Memory' errors when using QMIDI.
+   CAUSE: One or more MIDI files are using all available data space.
+   SOLUTION: Only load one MIDI file at a time -or- unload all MIDI
+	     files before performing memory-intensive tasks.
+
+   PROBLEM: My computer freezes, or no music plays, when I use
+	    LoadLarge, PlayLarge, or LoadAndPlayLarge.
+   CAUSE: The SBSIM driver is not loaded properly.
+   SOLUTION: Make sure that SBSIM.COM is loaded after SBMIDI.

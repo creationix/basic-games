@@ -1,0 +1,9 @@
+% start
+map 2  10 eyre.map
+COLOR 3
+event 1  10 leave
+wait
+% leave
+map 16435 main.map
+rpg init main.rpg
+

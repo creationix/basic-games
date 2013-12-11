@@ -1,0 +1,9 @@
+% start
+map 8  14 shrine.map
+COLOR 3
+event 8  15 leave
+wait
+% leave
+map 80 58 main.map
+rpg init main.rpg
+

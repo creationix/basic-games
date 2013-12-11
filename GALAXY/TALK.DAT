@@ -1,0 +1,1482 @@
+%L StarBase
+%F 01 Base1
+%D 2
+Hello Captain
+%L Enter
+Is there anything I can
+do for you?
+%Q 2
+%1 Tell me about yourself.       BaseTalk
+%2 That is all for now.          End
+%L BaseTalk
+I am the commander of this
+base and we were attacked
+by the Ur-Quan forces.
+%P
+It almost destroyed us.
+%P
+We were left for dead, but then
+you came and beat the guard
+obtaining the moon rock.
+%P
+We used it to fix the station and
+are indebted to you.
+%P
+%G Enter
+%L BaseI1
+Thank you so much for
+getting the Moon Rock.
+%P
+We are now putting it into the reactor.
+%t MoonRock
+%P
+%D 2
+There that worked.
+How can we repay you?
+%Q 3
+%1 Money?                        BI11
+%2 Other Objects?                BI12
+%3 Don't Bother                  End
+%L BI11
+%p 400
+There, you have 400 credits
+added to your account.
+%P
+Don't ask for anything else.
+%P
+%E
+%L BI12
+Yes, actually, we have many things
+for sell if you have the money.
+%P
+Here, have some junk
+%P
+%g RocketCard
+%E
+%L Base1
+%D 1
+Attention unidintified vesell.
+We are in desperate need of help.
+%P
+Can you help us?
+%Q 3
+%1 Woa, who are you              Base2
+%2 Sure, what do you need        Base3
+%3 Why should I help you         Base4
+%L Base3
+Wait, why are you so
+ambitious to help us?
+%P
+Don't you think it is not very
+wise to help someone who was attacked
+for an unknown crime?
+%Q 3
+%1 Why were you attacked?        Base5
+%2 Who are you?                  Base2
+%3 Why should I help you?        Base4
+%L Base5
+We were attacked because we broke
+the slave laws of the master Ur-Quan.
+%P
+Their laws stated that it was illegal
+to leave the base, even for our
+own survival.
+%P
+We were desperate and left in search
+minerals and other supplies.
+%P
+While we were gone they attacked and
+destroyed most of the base.
+%Q 1
+%1 I will make them pay          Base6
+%L Base2
+I am the commander of this spacestation
+and we were unfairly attacked by the
+Ur-Quan slave masters.
+%Q 1
+%1 Why should I help you.        Base4
+%L Base4
+If you don't help us, you
+won't have any way to repair or
+improve your 'great' ship.
+%Q 2
+%1 Okay what do you need.        Base6
+%2 Why do you need help.         Base5
+%L Base6
+Alright, here is the plan.
+%P
+IF you should accecpt this mission,
+you will be sent down to fight...
+%P
+
+
+                The Rock!
+
+%P
+If you kill him, take the moon rock
+and bring it back.
+%P
+Give it to us and we will use it
+to repair the main reactor.
+%Q 1
+%1 I am ready to fight.          Base7
+%L Base7
+See you later.
+%P
+Good luck!
+%P
+Don't fail.
+%P
+%D 6
+Prepare to meet your doom HUMAN!!
+%P
+%A 10 01
+%D 1
+%g MoonRock
+Woa, you killed him.
+%G BaseI1
+%L Vender
+%F 02 Vwelcome
+%D 10
+Welcome back, wanderer.
+%P
+Do you have the key?
+%Q 3
+%1 How do I get it?              Vkey
+%2 No                            Vbye
+%3 Here it is.                   Vyes
+%L Vkey
+The key is the only way to gain
+enterance into this great
+trading post above System
+%T 3
+%P
+If you want in you will have to
+go to the system with it at
+%T 10
+%P
+%L Vbye
+Goodbye wanderer.
+%P
+%E
+%L Vyes
+%I VenderKey                     Vskip
+Thats not the real key.
+%P
+I'm sorry, you can't get in without
+the KEY!
+%P
+%G Vbye
+%L Vskip
+Welcome into my store!
+%P
+You do know that in order to buy a
+ship you will need a card.
+%P
+The card says I have permission to
+give it to you. 
+%P
+This dosen't cost any money.
+%P
+%L VSTORE
+Would you like to sell or buy?
+%Q 3
+%1 Drop the junk ship.           Vsell
+%2 Buy new ships.                Vbuy
+%3 Thats all for now             End
+%L Vbuy
+Buy what?
+%Q 4
+%1 Airloo                        Vairloo
+%2 Tricity                       Vtricity
+%3 Electra                       Velectra
+%4 More                          Vbot
+%L Vbot
+%Q 4
+%1 Viper                         Vviper
+%2 Rocket                        Vrocket
+%3 Watcher                       Vwatcher
+%4 None                          Vbye
+%L Vtricity
+%I TricityCard                   VBtricity
+Sorry, you don't have the card.
+I Don't have permission to sell
+it to you.
+%G VSTORE
+%L VBtricity
+%S 12
+%t TricityCard
+There is a great Tricity ship.
+%G VSTORE
+%L Velectra
+%I ElectraCard                   VBelectra
+Sorry, you don't have the card.
+I Don't have permission to sell
+it to you.
+%G VSTORE
+%L VBelectra
+%S 13
+%t ElectraCard
+There is a great Electra ship.
+%G VSTORE
+%L Vviper
+%I ViperCard                     VBviper
+Sorry, you don't have the card.
+I Don't have permission to sell
+it to you.
+%G VSTORE
+%L VBviper
+%S 2
+%t ViperCard
+There is a great Viper ship.
+%G VSTORE
+%L Vrocket
+%I RocketCard                    VBrocket
+Sorry, you don't have the card.
+I Don't have permission to sell
+it to you.
+%G VSTORE
+%L VBrocket
+%S 1
+%t RocketCard
+There is a great Rocket ship.
+%G VSTORE
+%L Vwatcher
+%I WatcherCard                   VBwatcher
+Sorry, you don't have the card.
+I Don't have permission to sell
+it to you. Not at all!!
+%G VSTORE
+%L VBwatcher
+%S 14
+%t WatcherCard
+There is a great Watcher ship.
+%P
+Don't ever sell it!
+%G VSTORE
+%L Vairloo
+%I AirlooCard                    VBairloo
+Sorry, you don't have the card.
+I Don't have permission to sell
+it to you.
+%G VSTORE
+%L VBairloo
+%S 4
+%t AirlooCard
+There is a great Airloo ship.
+%G VSTORE
+%L Vsell
+Which one
+%Q 3
+%1 The top one.                  VsTop
+%2 The middle one.               VsMid
+%3 The bottom ship.              VsBot
+%L VsTop
+I'll get rid of that for you!
+%s 1
+There the top ship is gone.
+%P
+%G VSTORE
+%L VsMid
+I'll get rid of that for you!
+%s 2
+The the middle one is gone.
+%P
+%G VSTORE
+%L VsBot
+I'll get rid of that for you!
+%s 3
+There goes the Botton ship.
+%P
+%G VSTORE
+%E
+%L Vwelcome
+%D 11
+This system has a very funny readout
+on life.
+%P
+It says there is life, and then it is
+gone.
+%P
+A long time ago you heard a myth of a
+great vender in the skies.
+%P
+Maby this elusive life form could be
+him.
+%P
+Do you search the sun?
+%Q 2
+%1 Yes                           Venter
+%2 No                            Vscare
+%L Vscare
+Come on, this could be a very good
+opportunity to discover new life.
+%Q 2
+%1 Alright, I'm not scared       Venter
+%2 No, that is not safe          End
+%L Venter
+When you enter into the sun's outer
+layer, your ship starts falling apart.
+%P
+Then the tempature goes too high and
+the computer blows up!
+%P
+Oh, there goes Scottie, a flare just
+hit him.!
+%P
+What, they killed Kenny!!
+%P
+Were all in big trouble!!
+%P
+It's very HOT in here!!
+%P
+Were going to Die!
+%P
+Were gonnna DIIIEEEEEEE!!!!!!
+%P
+Aaahhhhhhhhhhhhh!!!!
+%P
+I see a bright light.
+%P
+It is coming closer.
+%P
+Hey, It stopped!
+%P
+NO!! its going away.
+%P
+Come Back!!
+%P
+%D 10
+Don't be afraid, this is my store.
+%P
+I won't let anthing happen to a
+potential customer.
+%P
+That would be bad business.
+%P
+My name if Suaron the Trade Master.
+Maby you have heard of me.
+%P
+If you have my key, I will sell you
+ships for it's return.
+%P
+It means very much to me.
+%Q 2
+%1 Goodbye, Trade Master         End
+%2 How do I find this key?       Vkey
+%L Venderk
+%F 03 VK1
+%E
+%L VK1
+%D 11
+Upon reaching this system, your
+sensors have found a large key
+laying on one of the planets.
+%P
+When you look closer you find
+The words 'MASTER VENDER'
+writtem all over it.
+%P
+You wander what it could be for.
+%P
+%g VenderKey
+%E
+%L Warp
+%F 04 WarpWelcome
+%E
+%L WarpWelcome
+%D 11
+This system has a very unsual
+reading on the sensors.
+%P
+It says one of the planets has a high
+energy level reading.
+%P
+Do you want to fly in close to the
+energy source?
+%Q 2
+%1 Nooooooo!                     End
+%2 Why not.                      WarpEnter
+%L WarpEnter
+As you fly towards the reading
+your ship suddenly looses all power.
+%P
+The stars start to streak in out the
+window.
+%P
+You are in a WormHole!
+%P
+As you come out on the other side you
+pick up the same energy reading.
+Do you go to it again?
+%Q 2
+%1 Yea                           WarpEnter
+%2 No, not again                 WarpNext
+%L WarpNext
+As you float around aimlessly you
+find a small pod on a nearby planet.
+%P
+Do you pick up the Pod?
+%Q 2
+%1 Yes, I need it                WarpGet
+%2 No, I'll just leave now       End
+%L WarpGet
+This pod looks useful/
+%g WarpPod
+%P
+Lets leave now.
+%E
+%L Supox
+%D 7
+%F 05 SWelcome
+Hello again traveller.
+%P
+%I AirlooCard                    Sgetorb
+I Don't think we have any business
+so you just came around to talk.
+%P
+%L Stalk
+What do you want to talk about
+%Q 4
+%1 Why do you look like a plant? Slplant
+%2 How are things going?         Sgoing
+%3 Tell me about the orb.        STorb
+%4 That is all.                  Sbye
+%L Slplant
+%I ElecSpin                      Stalk
+We are not plants!!
+%P
+Your insolence shall be punished!
+%P
+%A 09 05
+We are sorry great ship.
+%P
+Here have We only have this weird
+Electric Spindle.
+%g ElecSpin
+Don't be mad long.
+%G Stalk
+%L Sgoing
+Not much has happened here.
+%P
+%G Stalk
+%L STorb
+Like we said, the Airloo are at
+%T 25
+%P
+And after taking the card here at
+%T 20
+%P
+Take the orb to the Watchers at
+%T 30
+%P
+%G Stalk
+%L SWelcome
+Hello, We know who you are and
+What you want.
+%Q 2
+%1 You do?                       Sques
+%2 Yes, and we want all the moneySyes
+%L Sques
+We know that you have come in
+search of The Mystical Orb.
+%Q 2
+%1 What is the Mystical Orb?     Sorb
+%2 Oh, yeah, how do we get it?   Sget
+%L Sorb
+The Mystical orb is a very useful item.
+%P
+%L Showget
+We have it and want something in return
+for it.
+%Q 2
+%1 Would you accept money        Smoney
+%2 What if I gave you a Card     Scard
+%L Smoney
+No, money is useless and means nothing
+to us.
+%Q 1
+%1 What if I gave you a Card     Scard
+%L Scard
+Cards are very useful, but we only want
+one.
+%P
+It is the Airloo card.
+%Q 3
+%1 Why do you need it soo much   Sneed
+%2 Allright, I'll get it         Sbye
+%3 Where is this card            Swcard
+%L Sneed
+We will take it apart and learn their
+technologies.
+%P
+You Don't have the ability to do this
+so it means nothing to you.
+%P
+The Mystical Orb will be much more
+useful to you human.
+%Q 1
+%1 How in the orb useful to me.  Sworb
+%L Sworb
+The orb gives you an alliance with the
+great race, The Watchers.
+%P
+After you get it take it to
+%T 30
+%P
+There the Watchers will give you
+their super card.
+%G Sbye
+%L Syes
+No, that is not what you want
+%G Sques
+%L Sget
+The orb is not easy to get
+%G Showget
+%L Swcard
+The Airloo card can only come
+from the Airloo themselves.
+%P
+They are at
+%T 25
+%G Sbye
+%L Sbye
+Good bye for now.
+%P
+Human..
+%P
+%E
+%L Sgetorb
+Well, I see that you have the Airloo
+card.
+%P
+Please give it to us.
+%Q 2
+%1 No, it is mine.               Skeep
+%2 Here is is.                   Shere
+%L Skeep
+I'm telling you, you don't need it.
+%G Sbye
+%L Shere
+%t AirlooCard
+I have taken the card and here is the
+Orb.
+%g Orb
+%G Sbye
+%L Airloo
+%D 3
+%F 06 AWelcome
+%L Astart
+What do you want?
+%Q 4
+%1 I want your card.             Acard
+%2 I want to be friends.         Afriends
+%3 I want to kill all of you.    Akill
+%4 I will be leaving now         Abye
+%L Acard
+Not a chance,
+%P
+You will have to fight for it.
+%P
+%A 04 04
+%L Adied
+Wow, you killed half my fleet.
+%P
+Here, have it and money.
+%g AirlooCard
+%p 400
+%G Abye
+%L Afriends
+If you are really our friends you will
+be willing to help us, right?
+%Q 1
+%1 We would love to help you.    Ayea
+%L Ayea
+Well in that case, we need $1000.
+%Q 3
+%1 Okay, have it.                Apay
+%2 Why should I trust you?       Atrust
+%3 Not on my life!               Alife
+%L Apay
+%M 1000                          Apayy
+Sorry, you don't have that much.
+%G Abye
+%L Apayy
+Thankyou.
+%c 1000
+Have a symbol of our friendship
+%g AirlooCard
+%G Abye
+%L Atrust
+If you don't trust us, you can't be
+our friends
+%G Abye
+%L Alife
+Then you will die!
+%P
+%A 04 04
+Are you still alive
+well take this
+%P
+%A 04 03
+Time to call in friends
+%A 06 02
+%G Adied
+%L AWelcome
+Greeting new visitor.
+%P
+We are the Airloo.
+%P
+We Don't like hostility, but will fight
+for our freedom.
+%P
+That is a warning.
+%P
+%G Astart
+%L Abye
+Goodbye hostile Humans.
+%P
+Don't come back!
+%P
+%E
+%L Akill
+Fine then, try!
+%P
+%A 04 08
+%A 05 02
+%A 06 02
+%A 01 02
+%A 02 02
+%p 10000
+%G Adied
+%L Watcher
+%D 8
+%F 07 Wwelcome
+%I Orb                           Wsafe
+%I DeathCard                     Wdeath
+Greetings obedient human.
+%P
+How are your puny minds today?
+%Q 2
+%1 We are smarter than you!!     Wdeath
+%2 Fine, thank you               Wbye
+%L Wwelcome
+We are the Watchers and you are not
+worthy of our presence.
+%P
+We are the supreme beings in this
+entire galaxy. You are merely a small
+ship flying through space aimlessly
+with no course of action to be taken.
+%P
+We are constantly trying to keep this
+place in order. And if you don't mind
+we are busy.
+%P
+So unless you have the Orb or something
+like that I sugest you leave.
+%Q 2
+%1 Yes, I have the Mystical Orb  Worb
+%2 I'll be leaving now.          Wbye
+%L Worb
+If you are lying and don't really have
+the orb, we will be forced to destroy
+you.
+%P
+So one last time, DO YOU HAVE IT?
+%Q 2
+%1 Yes, I really got it!         Worbr
+%2 Just kidding, Bye             Wbye
+%L Worbr
+%I Orb                           Wsafe
+You were warned and lied to us twice.
+%P
+%L Wdeath
+That is a crime punishible by death!
+%P
+%g DeathCard
+So die!!
+%P
+%A 14 03
+%E
+%L Wsafe
+So you do really have it!
+%P
+Now hand it over!
+%Q 2
+%1 Yes sir, Watcher sir.         Whand
+%2 No, I want it.                Wdeath
+%L Whand
+%t Orb
+Here for your great spirits we give
+a card for one of our own ships.
+%g WatcherCard
+%G Wbye
+%L Wbye
+Goodbye mere Human...
+%P
+%E
+%L Electra
+%F 08 EFirst
+%D 9
+Hello again, human.
+%P
+%L Etalk
+What shall we talk about?
+%Q 4
+%1 What is the Electric Spindle  ESpindle
+%2 Who are the Tricity           ETricity
+%3 Why don't you like buffers on?Ewbuffer
+%4 Bye!                          Ebye
+%L ETricity
+The Tricity are a close relative of us.
+they think that they are more superior
+because of their three part ships
+compared to our two.
+%P
+But we are actually the better aliens.
+%P
+I think they live on
+%T 19
+or was it
+%T 17
+%P
+Oh, I can't remember, we hardly talk.
+%P
+%G Etalk
+%L Ewbuffer
+The buffer on you ship gives us a great
+headache.  It limits the amount of
+electricty in the air.
+%P
+%G Etalk
+%L ESpindle
+The what, oh you said swindle,
+oh that can't be right.
+%P
+Oh the Spindle, Electric Spindle.
+%P
+If you had it we could give you almost
+anything.
+%Q 2
+%1 I do have it!                 Ehaveit
+%2 Where can I get it?           Egetit
+%L Egetit
+I Don't know, ask the Supox
+%P
+%G Etalk
+%L Ehaveit
+Oh, you do, please give it to us.
+%I ElecSpin                      Ehavee
+No, you don't have it.
+%P
+%G Etalk
+%L Ehavee
+Thanks, we needed it
+%t ElecSpin
+What do you want?
+%Q 4
+%1 Money!                        Emoney
+%2 Forgiveness from death.       Eforgive
+%3 Card?                         Ecard
+%4 Information.                  Einfo
+%L Emoney
+Okay, how about 4000 credits.
+%p 4000
+%P
+%G Etalk
+%L Eforgive
+Oh, you mean get rid of the death cards.
+okay.
+%t DeathCard
+%t DeathCard
+%P
+%G Etalk
+%L Ecard
+Alright, have a card.
+%g ElectraCard
+%P
+%G Etalk
+%L Einfo
+Oh, info, we have much.
+%P
+The Great vendor is at
+%T 3
+%P
+His key is at
+%T 10
+%P
+The warp pod is at
+%T 15
+%P
+The Supox are at
+%T 20
+%P
+The Airloo are at
+%T 25
+%P
+The Watchers are at
+%T 30
+%P
+We are at
+%T 18
+%P
+And the Tricity are at
+%T 17
+%P
+I hope this is enough info.
+%P
+%G Etalk
+%L Ebye
+Good bye static people.
+%P
+%E
+%L EFirst
+%D 11
+As you enter this system, all the
+computers on your ship suddenly
+star outputting weird alien messages.
+%P
+Nobody on your ship can decode the
+messages.
+%P
+Now the messages are changing into
+more friendly languages.
+%P
+Now it is Supox, now Airloo, WOE!!
+It is in english.
+%P
+The message is telling you to turn off
+the buffer on your ship, it is hurting
+them.
+%P
+Do you turn the buffer off?
+%Q 2
+%1 Yes                           Eyoff
+%2 That would meltdown the ship! Enoff
+%L Enoff
+Suddenly your buffer turns itself off
+by some weird power.
+%L Eyoff
+As you turn the buffer wirls down your
+ship starts the meltdown sequence.
+%P
+In a few short seconds your ship will
+explode into mid space.
+%P
+That was the wrong move!
+%P
+%D 9
+I am Zeslesbot the Electra king!
+And who are you?
+%Q 2
+%1 I am a friend, o great master Efriend
+%2 Nobody to you!, Wall plug.    Edeath
+%L Efriend
+I guess we are now friends, but
+who are you really, I mean what is
+your name?
+%Q 1
+%1 I am... I forgot!             Eforget
+%L Eforget
+I think it will come back soon.
+%G Etalk
+%L Edeath
+%g DeathCard
+That was the wrong move, human!
+%P
+%A 13 05
+%E
+%L Tricity
+%F 09 Tfirst
+%D 9
+Greetings again 'Moderate' ship.
+%L Ttalk
+So, what do you want to talk about?
+%Q 4
+%1 What is the Electric Spindle? Tspindle
+%2 Who are the Electra?          TElectra
+%3 Where can I get this Spindle? Twhere
+%4 Bye for now, friends.         Tbye
+%L Twhere
+The eletric spindle is hidden within
+The Supox!
+%P
+%G Ttalk
+%L TElectra
+The Electra are our cousins.
+%P
+They are small and worthless to us.
+%P
+We haven't talked in years.
+%P
+%G Ttalk
+%L Tspindle
+The Electric Spindle is a great tool.
+%P
+If you ever give it to the Electra
+all the universe will collapse.
+%P
+It gives any worthy owner great power
+and large amounts of electric energy.
+%P
+We would love to have it, could you
+get it for us?
+%Q 2
+%1 I already have it.            Thspindle
+%2 Sure, where is it?            Twhere
+%L Thspindle
+Could you please give it yo us?
+%Q 2
+%1 Okay, have it                 Thaveit
+%2 Why should I trust you with itTtrust
+%L Thaveit
+%I ElecSpin                      TThaveit
+No, you don't have, liar.
+%c 1000
+%G Ttalk
+%L TThaveit
+Thanks, what can we do for you?
+%t ElecSpin
+%Q 3
+%1 Do you use money?             Tmoney
+%2 Give us a card.               Tcard
+%3 We don't need anything.       Tnone
+%L Tmoney
+Yes, we use lots of it,
+here have 1000 credits.
+%p 1000
+%P
+%G Ttalk
+%L Tcard
+Okay, how about two cards?
+%g ElectraCard
+%g TricityCard
+%P
+%G Ttalk
+%L Tnone
+Come on, you need something,
+%P
+How about information about reces?
+%P
+The Great vendor is at
+%T 3
+%P
+His key is at
+%T 10
+%P
+The warp pod is at
+%T 15
+%P
+The Supox are at
+%T 20
+%P
+The Airloo are at
+%T 25
+%P
+The Watchers are at
+%T 30
+%P
+The Electra are at
+%T 18
+%P
+And we the Tricity are at
+%T 17
+%P
+%G Ttalk
+%L Ttrust
+If you don't give it to us, you won't
+have any use for it, except to give it
+to the Electra.
+%P
+That would be terrible!
+%P
+%G Ttalk
+%L Tbye
+Bye 'moderate' friend.
+%P
+%E
+%L Tfirst
+%D 11
+As you enter this system, a large bolt
+of electricity comes from all the
+planets and hits you ship!!
+%P
+Your ship is now falling apart and
+melting at the joints.
+%P
+Suddenly a display comes up!
+%P
+%D 9
+Greetings, we are the tricity.
+%P
+We are sorry about any damage caused
+to your small ship.
+%P
+They will be repaired imediently.
+%Q 2
+%1 Why did you help us?          Thelp
+%2 We are not SMALL!!            Tsmall
+%L Thelp
+We are much greater than you, but
+in time all people can become useful
+and it is good to make friends with
+even the smallest ships.
+%P
+%Q 1
+%1 I said, we are not small!!    Tsmall
+%L Tsmall
+okay, I guess you are a moderately
+sized ship.
+%P
+I mean I have seen bigger.
+%G Ttalk
+%L Arena
+Welcome to the arena!
+%P
+%L Artalk
+What do you want to do today?
+%Q 2
+%1 Fight!!                       Arfight
+%2 Leave.                        Arbye
+%L Arbye
+Goodbye, come again!
+%E
+%L Arfight
+So, you want to fight, huh.
+%P
+Well you need some money.
+%P
+It'l cost ya 200 credits, which half
+of that will be paid back.
+%M 200                           Arafford
+Sorry, you don't got it.
+%G Artalk
+%L Arafford
+%c 200
+%L Armenu1
+What race?
+%Q 4
+%1 Rocket                        Arrocket
+%2 Viper                         Arviper
+%3 Bolt                          Arbolt
+%4 More                          Armenu2
+%L Armenu2
+What race?
+%Q 4
+%1 Airloo                        Arairloo
+%2 Wave                          Arwave
+%3 Surge                         Arsurge
+%4 More                          Armenu3
+%L Armenu3
+What race?
+%Q 4
+%1 Ur-Quan                       Arurquan
+%2 Titan                         Artitan
+%3 Supox                         Arsupox
+%4 More                          Armenu4
+%L Armenu4
+What race?
+%Q 4
+%1 Rock                          Arrock
+%2 Bumble                        Arbumble
+%3 Tricity                       Artricity
+%4 More                          Armenu5
+%L Armenu5
+What race?
+%Q 4
+%1 Electra                       Arelectra
+%2 Watcher                       Arwatcher
+%3 All of 'em                    Arall
+%4 More                          Armenu1
+%L Arrocket
+%A 01 10
+%p 100
+%G Artalk
+%L Arviper
+%A 02 10
+%p 100
+%G Artalk
+%L Arbolt
+%A 03 10
+%p 100
+%G Artalk
+%L Arairloo
+%A 04 10
+%p 100
+%G Artalk
+%L Arwave
+%A 05 10
+%p 100
+%G Artalk
+%L Arsurge
+%A 06 10
+%p 100
+%G Artalk
+%L Arurquan
+%A 07 10
+%p 100
+%G Artalk
+%L Artitan
+%A 08 10
+%p 100
+%G Artalk
+%L Arsupox
+%A 09 10
+%p 100
+%G Artalk
+%L Arrock
+%A 10 10
+%p 100
+%G Artalk
+%L Arbumble
+%A 11 10
+%p 100
+%G Artalk
+%L Artricity
+%A 12 10
+%p 100
+%G Artalk
+%L Arelectra
+%A 13 10
+%p 100
+%G Artalk
+%L Arwatcher
+%A 14 10
+%p 100
+%G Artalk
+%L Arall
+%A 01 05
+%A 02 05
+%A 03 05
+%A 04 05
+%A 05 05
+%A 06 05
+%A 07 05
+%A 08 05
+%A 09 05
+%A 10 05
+Wow, you're tough
+%P
+%c 100
+%G Artalk
+%L Died
+You have been destroyed and now
+all the universe will fall into the
+hands the evil Ur-Quan.
+%P
+It is all over and it is all your
+fault, you sorry excuse for a
+        COMMANDER!!
+%P
+%E
+%L MenuHelp
+The menus in this game are fairly
+simple to run.
+%P
+All you have to do is scroll through
+list of items using thecurcoe keys.
+%P
+When you have selected the right menu
+item press either SpaceBar or Enter.
+%P
+The program will then carry out the
+specified task.
+%P
+%E
+%L FightHelp
+The first thing to do in a fight is
+to select a ship. This is simple, just
+pick one and press enter or space.
+%P
+The fighting is also simple,
+The only controls are up, down, and
+fire.
+%P
+The top of the screen shows how many
+of your crew haven't been blown away by
+the enemy blast.
+%P
+If your crew goes to zero, the ship
+explodes and is gone forverer.
+%P
+If you defeat all the attacking ships,
+you will have your normal crew
+compliment restored.
+%P
+If all your ships are destroyed, then
+you will lose the game.
+%P
+%E
+%L MapHelp
+Moving is space is easy to do, but
+takes a while to get good at.
+%P
+The controls are, right to turn
+clockwise, left to turn
+counterclockwise, and up to use the
+thrusters.
+%P
+When you are over the star or base you
+want to enter, press space or enter.
+%P
+To get to the StarMap, go to the main
+menu and select the top item.
+%P
+%E
+%L BaseHelp
+The Starbase is not easy to use, but
+is invaluable to the player.
+%P
+It runs like a normal menu going up and
+down selecting items.
+%P
+When you first encounter the base, you
+will have to save them. Then it will
+be handed over to you for all use as
+an all purpose store.
+%P
+To buy a part for your big ship, you
+will have to go to the AddPart menu.
+%P
+If what you want is not there then go
+to the next menu for more.
+%P
+Press space or enter when the item is
+selected.
+The prices for the items and what they
+do are....
+%P
+Gas Tank    100         Hold 100 Fuel
+Lazer       250         Hurt 1 point
+Storage     300         Hold Minerals
+Thruster    100         Better foword
+%P
+Turn Jet    100         Better turning
+Hi Fuel     350         Hold 300 Fuel
+Plasma A    500         Hurt 2 points
+Plasma B    750         Hurt 3 points
+%P
+Dynamo      150         Half fuel use
+Furnace     300         Quarter use
+Bomber      1000        Hurt 5 points
+%P
+%E
+%L TalkHelp
+It is a good idea to read all that is
+said and make sure you understand it
+all.
+%P
+If you are asked a question, then chose
+your response.
+%P
+Sounds simple, well it is at first.
+%P
+Some choices will cause very bad things
+to happen, while others will help you.
+%P
+%E
+%L Ur-Quan
+%F 10 Ur-first
+%G Ur-leave
+%L Ur-first
+Who are you, you don't comply with our
+slave laws and now will be destroyed!
+%P
+%A 07 04
+You have found our secret lair.
+%P
+%L Ur-leave
+If you do not immedietely leave, we
+will be forced to destroy you.
+%P
+Do you now leave?
+%Q 2
+%1 No, I will fight              Ur-fight
+%2 Yes, I am sorry....           Ur-bye
+%L Ur-bye
+I Don't think so, you can't leave
+alive. (get em Titans)
+%A 08 05
+I'll get you next time.
+%P
+%E
+%L Ur-fight
+Then die!
+%P
+%I TimeBomb                      Ur-Safe1
+%G Ur-dead
+%L Ur-Safe1
+Wo! you have the time bomb
+%I ShivaDevice                   Ur-Safe2
+%G Ur-dead
+%L Ur-Safe2
+Uh-oh, and the Shiva device!
+%I MessScram                     Ur-Safe3
+%G Ur-dead
+%L Ur-Safe3
+And the Message Scrambler.
+%P
+Were gonna die!
+%P
+Well not without a fight!
+%P
+%A 07 30
+Get em Titans, and this time, kill them
+%P
+%A 08 40
+You have destroyed us all and we will
+not have power to be slave masters ever
+again.
+%P
+%D 2
+Good job commander. You have made us
+all proud and kept your word 'I will
+make them pay!'
+%P
+Now the universe is safe and you have
+succeded in your mission.
+%P
+The only problem you now have is what
+to do next.
+%p 10000
+%P
+This should be enough to have fun in
+the arena by StarBase.
+%E
+%L Ur-dead
+%A 07 20
+%A 08 20
+%A 07 30
+%A 08 30
+%E
+%L John
+Hello, I am john. maby I have seen
+you before, or maby I have not.
+Oh, I can't remember.
+%P
+%L Jstore
+So, Welcome to my store.
+What do you want?
+%Q 4
+%1 I want to buy items.          Jitems
+%2 I want to buy ships.          Jships
+%3 I want to Buy information.    Jinfo
+%4 That's enough for now.        Jbye
+%L Jbye
+PLease come again with much more money!
+%P
+%E
+%L Jitems
+Three of items are all required to kill
+the Ur-Quan. They cost 1000 credits
+each.
+%M 1000                          Jokay
+You Don't got that much.
+%P
+%G Jstore
+%c 1000
+%L Jokay
+%P
+%L Jbuy1
+Buy which?
+%Q 4
+%1 Eletric Spindle               Jspin
+%2 Shiva Device                  Jshiva
+%3 Warp Pod                      Jwarp
+%4 More                          Jbuy2
+%L Jbuy2
+Buy which?
+%Q 4
+%1 Message Scrambler             Jmess
+%2 Time Bomb                     Jbomb
+%3 Ultron                        Jultron
+%4 More                          Jbuy1
+%L Jspin
+%g ElecSpin
+%G Jstore
+%L Jshiva
+%g ShivaDevice
+%G Jstore
+%L Jwarp
+%g WarpPod
+%G Jstore
+%L Jmess
+%g MessScram
+%G Jstore
+%L Jbomb
+%g TimeBomb
+%G Jstore
+%L Jultron
+%g Ultron
+%G Jstore
+%L Jships
+Ships cost $2000 each
+%M 2000                          Jokay2
+Sorry you don't have $2000.
+%G Jstore
+%L Jokay2
+%c 2000
+Well what do you want.
+%Q 4
+%1 Wave                          Jwave
+%2 Surge                         Jsurge
+%3 Bumble                        Jbumble
+%4 Rock                          Jrock
+%L Jwave
+%S 5
+%G Jstore
+%L Jsurge
+%S 6
+%G Jstore
+%L Jbumble
+%c 200
+%S 11
+%G Jstore
+%L Jrock
+%S 10
+%G Jstore
+%L Jinfo
+Information cost %500.
+%M 500                           Jokay3
+%G Jstore
+%L Jokay3
+%c 500
+What do you want to know?
+%Q 4
+%1 Where are the Ur-Quan?        JUr-Quan
+%2 Where is the Warp Pod?        Jpod
+%3 What items do I need?         Jneed
+%4 Nevermind.                    Jnever
+%L JUr-Quan
+The Ur-Quan are at...
+%P
+Wait should I tell you...
+%P
+Okay, you paid how about a hundred more
+to pay off the Ur-Quan guards...
+%c 100
+%P
+They are at the system
+%T 37
+%P
+%G Jstore
+%L Jpod
+The pod is at
+%T 15
+%P
+%G Jstore
+%L Jneed
+You will need the bomb, shiva thing,
+and the scrambler.
+%P
+%G Jstore
+%L Jnever
+Okay, have it back.
+%p 450
+%P
+%G Jstore
+%L End
+End Transmission!
+%EOF
+

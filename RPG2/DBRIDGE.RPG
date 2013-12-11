@@ -1,0 +1,21 @@
+% front
+map 15 28 dbridge.map
+GOTO start
+% back
+map 24 2  dbridge.map
+GOTO start
+% start
+COLOR 3
+midi dbridge.mid
+event 15 30 leavef
+event 16 30 leavef
+event 24 1  leaveb
+event 25 1  leaveb
+wait
+% leavef
+map 12566 main.map
+rpg init main.rpg
+% leaveb
+map 13054 main.map
+rpg init main.rpg
+

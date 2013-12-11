@@ -1,0 +1,85 @@
+  
+% start
+COLOR 3
+SAY you enter what seems to be an old
+say armory...
+map 8  14 armory.map
+COLOR 3
+event 8  15 leave
+event 4  9  chest1
+event 6  7  chest2
+event 5  5  chest3
+event 6  3  chest4
+event 6  12 chest5
+event 12 9  chest6
+event 10 7  chest7
+event 12 5  chest8
+event 11 11 chest9
+wait
+% leave
+map 15 26 main.map
+rpg init main.rpg
+% chest1
+ifitem chest1
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest1
+wait
+% chest2
+ifitem chest2
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest2
+wait
+% chest3
+ifitem chest3
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest3
+wait
+% chest4
+ifitem chest4
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest4
+wait
+% chest5
+ifitem chest5
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest5
+wait
+% chest6
+ifitem chest6
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest6
+wait
+% chest7
+ifitem chest7
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest7
+wait
+% chest8
+ifitem chest8
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest8
+wait
+% chest9
+ifitem chest9
+wait
+COLOR 3
+say You find a chest full of treasure
+additem chest9
+wait
+

@@ -1,0 +1,8 @@
+#include <windows.h>
+#include <owl\window.rh>
+
+EXITMENU MENU LOADONCALL MOVABLE PURE DISCARDABLE
+BEGIN
+    MENUITEM "E&xit", CM_EXIT
+END
+

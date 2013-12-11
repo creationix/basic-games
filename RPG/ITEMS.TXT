@@ -1,0 +1,1100 @@
+Item # 1                    Item # 2 
+Name: Gold Bag              Name: Gold Dust
+Misc Bag     11             Misc Bag     11 
+Gold low     10             Gold low     18 
+Gold High    22             Gold High    35 
+Food         0              Food         0 
+------------ 0              ------------ 0 
+------------ 0              ------------ 0 
+Cost: 2                     Cost: 3 
+Pic# 11                     Pic# 11 
+****************************************************************
+Item # 3                    Item # 4 
+Name: Fairy Dust            Name: Accuracy Bow +3
+Scroll B     6              Bow Weapon   1 
+Light        0              Ammo type    1 
+Cast spell # 0              Range        9 
+Sleep        1              Accuracy%    3 
+Damage Low   0              Strength rq  12 
+Damage High  0              Dexterity rq 16 
+Cost: 7                     Cost: 61 
+Pic# 11                     Pic# 7 
+****************************************************************
+Item # 5                    Item # 6 
+Name: Arrow Fill            Name: Posin Arrows
+Arrow Weapon 2              Arrow Weapon 2 
+Ammo type    1              Ammo type    1 
+Damage Low   5              Damage Low   10 
+Damage High  11             Damage High  10 
+Poisin Tip   0              Poisin Tip   1 
+Sleep Tip    0              Sleep Tip    0 
+Cost: 10                    Cost: 46 
+Pic# 8                      Pic# 8 
+****************************************************************
+Item # 7                    Item # 8 
+Name: Sleep Arrows          Name: Dagger
+Arrow Weapon 2              Sword Weapon 3 
+Ammo type    1              Hands used   1 
+Damage Low   5              Strength rq  9 
+Damage High  7              Dexteruty rq 14 
+Poisin Tip   0              Damage Low   5 
+Sleep Tip    1              Damage High  10 
+Cost: 68                    Cost: 6 
+Pic# 8                      Pic# 6 
+****************************************************************
+Item # 9                    Item # 10 
+Name: Short Sword           Name: Long Sword
+Sword Weapon 3              Sword Weapon 3 
+Hands used   1              Hands used   1 
+Strength rq  11             Strength rq  17 
+Dexteruty rq 10             Dexteruty rq 11 
+Damage Low   8              Damage Low   14 
+Damage High  13             Damage High  20 
+Cost: 11                    Cost: 20 
+Pic# 5                      Pic# 5 
+****************************************************************
+Item # 11                   Item # 12 
+Name: 2H Sword              Name: Glass Sword
+Sword Weapon 3              Scroll B     6 
+Hands used   2              Light        0 
+Strength rq  17             Cast spell # 0 
+Dexteruty rq 16             Sleep        1 
+Damage Low   22             Damage Low   250 
+Damage High  30             Damage High  300 
+Cost: 40                    Cost: 100 
+Pic# 5                      Pic# 5 
+****************************************************************
+Item # 13                   Item # 14 
+Name: Odd Keys              Name: Key Ring
+Keys         13             Keys         13 
+Skeleton     1              Skeleton     0 
+Reusable     0              Reusable     0 
+------------ 0              ------------ 0 
+------------ 0              ------------ 0 
+------------ 0              ------------ 0 
+Cost: 34                    Cost: 9 
+Pic# 4                      Pic# 4 
+****************************************************************
+Item # 15                   Item # 16 
+Name: Lock Pick             Name: Ankh
+Keys         13             Amulet       12 
+Skeleton     0              Invisibility 0 
+Reusable     7              Protection   0 
+------------ 0              Mana boost   0 
+------------ 0              Divine Luck  1 
+------------ 0              ------------ 0 
+Cost: 24                    Cost: 119 
+Pic# 4                      Pic# 10 
+****************************************************************
+Item # 17                   Item # 18 
+Name: Axe     Name: Leather helmet
+Sword Weapon 3              Armor-Helmet 7 
+Hands used   1              Protection   1 
+Strength rq  16             Spiked       0 
+Dexteruty rq 15             Low Damage   0 
+Damage Low   16             High Damage  0 
+Damage High  14             Strength req 4 
+Cost: 32                    Cost: 9 
+Pic# 15                     Pic# 2 
+****************************************************************
+Item # 19                   Item # 20 
+Name: Chain Coif            Name: Spiked Helmet
+Armor-Helmet 7              Armor-Helmet 7 
+Protection   1              Protection   2 
+Spiked       0              Spiked       1 
+Low Damage   0              Low Damage   5 
+High Damage  0              High Damage  9 
+Strength req 10             Strength req 14 
+Cost: 15                    Cost: 25 
+Pic# 2                      Pic# 2 
+****************************************************************
+Item # 21                   Item # 22 
+Name: Wooden Sheild         Name: Small sheild
+Armor-Sheild 8              Armor-Sheild 8 
+Protection   1              Protection   3 
+Spiked       0              Spiked       0 
+Low Damage   0              Low Damage   0 
+High Damage  0              High Damage  0 
+Strength req 5              Strength req 12 
+Cost: 7                     Cost: 13 
+Pic# 14                     Pic# 9 
+****************************************************************
+Item # 23                   Item # 24 
+Name: Large sheild          Name: Robes
+Armor-Sheild 8              Armor-body   9 
+Protection   4              Protection   1 
+Spiked       0              Strength req 4 
+Low Damage   0              -----------  0 
+High Damage  0              -----------  0 
+Strength req 16             -----------  0 
+Cost: 24                    Cost: 7 
+Pic# 9                      Pic# 1 
+****************************************************************
+Item # 25                   Item # 26 
+Name: Leather armor         Name: Ring mail
+Armor-body   9              Armor-body   9 
+Protection   2              Protection   5 
+Strength req 6              Strength req 12 
+-----------  0              -----------  0 
+-----------  0              -----------  0 
+-----------  0              -----------  0 
+Cost: 9                     Cost: 29 
+Pic# 1                      Pic# 1 
+****************************************************************
+Item # 27                   Item # 28 
+Name: Chain Mail            Name: Plate Mail
+Armor-body   9              Armor-body   9 
+Protection   6              Protection   8 
+Strength req 13             Strength req 18 
+-----------  0              -----------  0 
+-----------  0              -----------  0 
+-----------  0              -----------  0 
+Cost: 65                    Cost: 80 
+Pic# 1                      Pic# 1 
+****************************************************************
+Item # 29                   Item # 30 
+Name: In Lor Scroll         Name: In Zu Scroll
+Scroll B     6              Scroll B     6 
+Light        1              Light        0 
+Cast spell # 0              Cast spell # 0 
+Sleep        0              Sleep        1 
+Damage Low   0              Damage Low   0 
+Damage High  0              Damage High  0 
+Cost: 6                     Cost: 13 
+Pic# 12                     Pic# 12 
+****************************************************************
+Item # 31                   Item # 32 
+Name: Por Flam Scroll       Name: In Mani Scroll
+Scroll B     6              Scroll A     5 
+Light        0              Healing pts  8 
+Cast spell # 0              Poisin cure  0 
+Sleep        0              Invisibility 0 
+Damage Low   8              Flying       0 
+Damage High  12             Resurection  0 
+Cost: 11                    Cost: 7 
+Pic# 12                     Pic# 12 
+****************************************************************
+Item # 33                   Item # 34 
+Name: An Nox Scroll         Name: Kal Ort Wis Scroll
+Scroll A     5              Scroll A     5 
+Healing pts  0              Healing pts  0 
+Poisin cure  1              Poisin cure  0 
+Invisibility 0              Invisibility 0 
+Flying       0              Flying       34 
+Resurection  0              Resurection  0 
+Cost: 12                    Cost: 29 
+Pic# 12                     Pic# 12 
+****************************************************************
+Item # 35                   Item # 36 
+Name: In Mani Corp Scroll   Name: Invisibility Ring
+Scroll A     5              Ring A       10 
+Healing pts  0              Invisibility 1 
+Poisin cure  0              Wall Walk    0 
+Invisibility 0              Invincible   0 
+Flying       0              ------------ 0 
+Resurection  1              ------------ 0 
+Cost: 47                    Cost: 43 
+Pic# 12                     Pic# 3 
+****************************************************************
+Item # 37                   Item # 38 
+Name: Wall Walk Ring        Name: Holy Ring
+Ring A       10             Ring A       10 
+Invisibility 0              Invisibility 0 
+Wall Walk    1              Wall Walk    0 
+Invincible   0              Invincible   1 
+------------ 0              ------------ 0 
+------------ 0              ------------ 0 
+Cost: 44                    Cost: 42 
+Pic# 3                      Pic# 3 
+****************************************************************
+Item # 39                   Item # 40 
+Name: Magic Axe             Name: Crosbow
+Pole Weapon  4              Bow Weapon   1 
+Range        4              Ammo type    2 
+Strength rq  11             Range        5 
+Dexteruty rq 9              Accuracy%    1 
+Damage Low   35             Strength rq  11 
+Damage High  87             Dexterity rq 11 
+Cost: 132                   Cost: 28 
+Pic# 15                     Pic# 7 
+****************************************************************
+Item # 41                   Item # 42 
+Name: Masamune              Name: Rations
+Sword Weapon 3              Misc Bag     11 
+Hands used   1              Gold low     0 
+Strength rq  13             Gold High    0 
+Dexteruty rq 18             Food         3 
+Damage Low   820            ------------ 0 
+Damage High  1800           ------------ 0 
+Cost: 300                   Cost: 6 
+Pic# 5                      Pic# 16 
+****************************************************************
+Item # 43                   Item # 44 
+Name: Roast   Name: Leather Boots
+Amulet       12             Boots        15 
+Invisibility 0              + Speed      0 
+Protection   0              + Strength   0 
+Mana boost   2              + Protection 1 
+Divine Luck  0              + Dexterity  1 
+------------ 0              ------------ 0 
+Cost: 11                    Cost: 10 
+Pic# 16                     Pic# 6 
+****************************************************************
+Item # 45                   Item # 46 
+Name: Retros  Name: 
+Boots        15             Gloves       16 
++ Speed      0              Chest Punch  35 
++ Strength   0              Door Punch   38 
++ Protection 4              + Protection 34 
++ Dexterity  2              Rock Climb   35 
+------------ 0              Rock Crumble 48 
+Cost: 14                    Cost: 576 
+Pic# 6                      Pic# 16 
+****************************************************************
+Item # 47                   Item # 48 
+Name:         Name: 
+Boots        15             Boots        15 
++ Speed      0              + Speed      0 
++ Strength   0              + Strength   0 
++ Protection 0              + Protection 0 
++ Dexterity  0              + Dexterity  0 
+------------ 0              ------------ 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 49                   Item # 50 
+Name:         Name: 
+Boots        15             Boots        15 
++ Speed      0              + Speed      0 
++ Strength   0              + Strength   0 
++ Protection 0              + Protection 0 
++ Dexterity  0              + Dexterity  0 
+------------ 0              ------------ 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 51                   Item # 52 
+Name:         Name: 
+Boots        15             Boots        15 
++ Speed      0              + Speed      0 
++ Strength   0              + Strength   0 
++ Protection 0              + Protection 0 
++ Dexterity  0              + Dexterity  0 
+------------ 0              ------------ 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 53                   Item # 54 
+Name:         Name: 
+Boots        15             Boots        15 
++ Speed      0              + Speed      0 
++ Strength   0              + Strength   0 
++ Protection 0              + Protection 0 
++ Dexterity  0              + Dexterity  0 
+------------ 0              ------------ 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 55                   Item # 56 
+Name:         Name: 
+Boots        15             Gloves       16 
++ Speed      0              Chest Punch  0 
++ Strength   0              Door Punch   0 
++ Protection 0              + Protection 0 
++ Dexterity  0              Rock Climb   0 
+------------ 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 57                   Item # 58 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 59                   Item # 60 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 61                   Item # 62 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 63                   Item # 64 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 65                   Item # 66 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 67                   Item # 68 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 69                   Item # 70 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 71                   Item # 72 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 73                   Item # 74 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 75                   Item # 76 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 77                   Item # 78 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 79                   Item # 80 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 81                   Item # 82 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 83                   Item # 84 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 85                   Item # 86 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 87                   Item # 88 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 89                   Item # 90 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 91                   Item # 92 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 93                   Item # 94 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 95                   Item # 96 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 97                   Item # 98 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 99                   Item # 100 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 101                  Item # 102 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 103                  Item # 104 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 105                  Item # 106 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 107                  Item # 108 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 109                  Item # 110 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 111                  Item # 112 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 113                  Item # 114 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 115                  Item # 116 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 117                  Item # 118 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 119                  Item # 120 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 121                  Item # 122 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 123                  Item # 124 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 125                  Item # 126 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 127                  Item # 128 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 129                  Item # 130 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 131                  Item # 132 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 133                  Item # 134 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 135                  Item # 136 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 137                  Item # 138 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 139                  Item # 140 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 141                  Item # 142 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 143                  Item # 144 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 145                  Item # 146 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 147                  Item # 148 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 149                  Item # 150 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 151                  Item # 152 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 153                  Item # 154 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 155                  Item # 156 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 157                  Item # 158 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   1              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 159                  Item # 160 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 161                  Item # 162 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 163                  Item # 164 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 165                  Item # 166 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 167                  Item # 168 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 169                  Item # 170 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 171                  Item # 172 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 173                  Item # 174 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 175                  Item # 176 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 177                  Item # 178 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 179                  Item # 180 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 181                  Item # 182 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 183                  Item # 184 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 185                  Item # 186 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 187                  Item # 188 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 189                  Item # 190 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 191                  Item # 192 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 193                  Item # 194 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 195                  Item # 196 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 197                  Item # 198 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 16 
+****************************************************************
+Item # 199                  Item # 200 
+Name:         Name: 
+Gloves       16             Gloves       16 
+Chest Punch  0              Chest Punch  0 
+Door Punch   0              Door Punch   0 
++ Protection 0              + Protection 0 
+Rock Climb   0              Rock Climb   0 
+Rock Crumble 0              Rock Crumble 0 
+Cost: 0                     Cost: 0 
+Pic# 16                     Pic# 9 
+****************************************************************

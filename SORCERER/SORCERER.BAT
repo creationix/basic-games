@@ -1,0 +1,2 @@
+qbasic /run sorcerer
+

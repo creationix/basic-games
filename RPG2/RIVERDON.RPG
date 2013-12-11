@@ -1,0 +1,86 @@
+% start
+say Welcome to Riverdon
+say This is where you were raised
+map 10 19 riverdon.map
+event 10 20 exit
+event 12 15 grandpa
+event 15  2 ferry
+event 5  11 josh
+wait
+% exit
+map 18 76 main.map
+rpg init main.rpg
+% grandpa
+ifitem Amulet of Patriarch
+wait
+charpic grand.chr
+COLOR 1
+say Hello grandson,
+say lets go to BridgeTowne
+say to see Uncle Lars.
+pause
+say Here... This is my father's amulet
+say It was his fathers... and now it is
+say yours.
+pause
+additem Amulet of Patriarch
+character grand.chr
+wait
+% notMuch
+say It's been pretty quiet since you
+say killed the DeamonWurm...
+ifitem harmonica
+wait
+ask Can I Join your party?
+GOTO getjosh
+say Well bye
+wait
+% getjosh
+say cool!
+additem harmonica
+character josh.chr
+wait
+% josh
+ifitem harmonica
+wait
+COLOR 1
+say Hey Solith! What's up
+pause
+COLOR 2
+say You know, Josh, the normal.
+pause
+COLOR 1
+ifitem scales
+GOTO notMuch
+say Well... We are having trouble here
+say The DeamonWurm keeps eating our crops
+say and we can't make a big enough army to
+say kill him!
+pause
+ask Say! can you kill him for us?
+say Good, he lives in the cave across the river
+say bye!
+pause
+wait
+COLOR 2
+% ferry
+COLOR 1
+say Hi Solith, I haven't seen you in
+say a while. How are you?
+pause
+COLOR 2
+say Fine. How are you?
+pause
+COLOR 1
+say I am doing great... Do you want to
+ask use the ferry
+GOTO use
+say Well bye..
+wait
+% use
+COLOR 1
+say See you later Solith!
+pause
+map 18 58 main.map
+rpg init main.rpg
+

@@ -1,0 +1,20 @@
+% front
+say you enter in front
+map 6  9  death.map
+GOTO start
+% back
+say you enter in back
+map 3  2  death.map
+GOTO start
+% start
+COLOR 3
+event 6  10 leavef
+event 3  1  leaveb
+wait
+% leavef
+map 11526 main.map
+rpg init main.rpg
+% leaveb
+map 11019 main.map
+rpg init main.rpg
+

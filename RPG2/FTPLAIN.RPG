@@ -1,0 +1,15 @@
+% start
+map 15 29 ftplain.map
+COLOR 3
+event 15 30 leave
+event 16 30 leave
+event 30 16 leaver
+event 30 17 leaver
+wait
+% leave
+map 12046 main.map
+rpg init main.rpg
+% leaver
+map 13040 main.map
+rpg init main.rpg
+

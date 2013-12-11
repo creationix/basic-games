@@ -1,0 +1,34 @@
+% start
+map 6  9  hermit.map
+COLOR 3
+event 6  10 leave
+event 6  7  hermit
+wait
+% leave
+map 60 17 main.map
+rpg init main.rpg
+% hermit
+ifitem orb
+wait
+charpic hermit.chr
+COLOR 1
+say Hello I am the mountain hermit.
+ifitem shell
+GOTO safe
+say I live here in the mountains
+say I collect shells from the beach
+say If you ever find one bring it to me.
+wait
+% safe
+ask Can I have that pretty shell
+GOTO takeshell
+say Well... Bye
+wait
+% takeshell
+takeitem shell
+ask Can I join your quest
+character hermit.chr
+additem orb
+wait
+
+

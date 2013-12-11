@@ -1,0 +1,1 @@
+qbasic /run zenith.bas

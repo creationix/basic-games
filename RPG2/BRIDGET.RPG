@@ -1,0 +1,88 @@
+% front
+say you enter in front
+map 15 28 bridget.map
+GOTO start
+% back
+say you enter in back
+map 15 2  bridget.map
+GOTO start
+% start
+COLOR 3
+say As you enter Bridgetowne you hear
+say lots of noise in the background.
+midi bridget.mid
+event 12 13 barfight
+event 15 30 leavef
+event 16 30 leavef
+event 15 1  leaveb
+event 16 1  leaveb
+wait
+% barfight
+COLOR 3
+say You sit down at the bar stool.
+pause
+COLOR 1
+say What can I do for you?
+pause
+COLOR 2
+ifitem tooth
+GOTO peace
+say I would like...
+pause
+COLOR 3
+say As you are ordering, a large man
+say sitting next to you growls.
+pause
+COLOR 0
+charpic josh.chr
+say What are you doing ordering in my bar
+say Hey buddies, help.
+monster thief.chr
+monster goon.chr
+monster goon.chr
+fight
+COLOR 3
+additem tooth
+say you grab the tooth of the dead drunk
+say and wave it in the air
+pause
+say after you kill the first three more
+say come running to you.
+pause
+say suddenly one tall formal man steps up
+say to you.
+pause
+COLOR 1
+charpic lars.chr
+say I am your uncle Lars..
+say lets go to for Pain to turn your
+say scales into usable armor.
+pause
+say Where is your grandpa?
+pause
+COLOR 2
+say Thanos killed him!
+COLOR 1
+pause
+say well... He lives in a castle to the
+say north.  You need to avenge his death.
+character lars.chr
+wait
+pause
+COLOR 3
+say as Lars tells you about his latest adventures,
+say the drunks back off and leave you alone.
+wait
+% peace
+say I would like a cold one.
+pause
+COLOR 1
+say here you go
+wait
+% leavef
+map 12586 main.map
+rpg init main.rpg
+% leaveb
+map 12574 main.map
+rpg init main.rpg
+
